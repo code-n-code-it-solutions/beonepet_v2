@@ -56,7 +56,9 @@
         <div class="container">
             <div class="row">
                     <div class="d-flex justify-content-start align-items-center py-5">
-                        <h2 class="breadcrumb-title text-white text-start" style="font-size: 3rem">DUDAS Y <br> PREGUNTAS</h2>
+                        <h2 class="breadcrumb-title text-white text-start" style="font-size: 3rem">
+                            DUDAS Y <br> PREGUNTAS
+                        </h2>
                     </div>
             </div>
         </div>

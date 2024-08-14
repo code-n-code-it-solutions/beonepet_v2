@@ -84,7 +84,7 @@
     </style>
 
     <!-- Hero Section Start -->
-    <div class="hero mb-5">
+    <div class="hero mb-5 " style="z-index: -1">
         <img src="{{asset('assets/images/animals/homepage/slider-1.webp')}}" alt="Hero Image"/>
         <div class="hero-content">
             <a href="{{url('/')}}" class="hero-logo">
