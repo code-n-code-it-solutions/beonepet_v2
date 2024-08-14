@@ -10,8 +10,8 @@
     <link rel="shortcut icon" href="{{asset('assets/images/logo/favicon.png')}}">
 
     <!-- Vendor CSS (Icon Font) -->
-{{--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">--}}
-    <link rel="stylesheet" href="{{asset('assets/css/vendor/fontawesome.min.css')}}"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap">
+{{--    <link rel="stylesheet" href="{{asset('assets/css/vendor/fontawesome.min.css')}}"/>--}}
     <link rel="stylesheet" href="{{asset('assets/css/vendor/simple-line-icons.min.css')}}"/>
     <link rel="stylesheet" href="{{asset('assets/css/vendor/themify-icons-min.css')}}"/>
 
@@ -24,6 +24,7 @@
 
     <!-- Main Style CSS -->
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}"/>
+    <link rel="stylesheet" href="{{asset('assets/css/custom-style.css')}}"/>
 
     <!-- Use the minified version files listed below for better performance and remove the files listed above -->
     <!--
@@ -36,7 +37,7 @@
     <style>
         * {
             color : #7d3800 !important;
-            font-family: "Times New Roman", Times, serif !important;
+            font-family: 'Times New Roman', Times, serif;
         }
     </style>
 </head>
@@ -87,96 +88,8 @@
 
 <!--Main JS-->
 <script src="{{asset('assets/js/main.js')}}"></script>
+<script src="{{asset('assets/js/custom-scripts.js')}}"></script>
 <script src="https://cdn.jsdelivr.net/npm/heroicons-css@0.1.1/heroicons.min.js"></script>
 
-<script>
-    var swiper = new Swiper(".productSwiper", {
-        slidesPerView: 5,  // Number of slides to show at a time
-        spaceBetween: 10,  // Space between slides
-        loop: true,        // Loop through slides
-        autoplay: {
-            delay: 2500,   // Auto scroll delay in milliseconds
-            disableOnInteraction: false,  // Keep auto scroll even when user interacts
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 10,
-            },
-            480: {
-                slidesPerView: 1,
-                spaceBetween: 10,
-            },
-            576: {
-                slidesPerView: 2,
-                spaceBetween: 10,
-            },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-            },
-            992: {
-                slidesPerView: 4,
-                spaceBetween: 30,
-            },
-            1200: {
-                slidesPerView: 5,
-                spaceBetween: 40,
-            },
-        }
-    });
-
-    var swiper = new Swiper(".plansSwiper", {
-        slidesPerView: 3,  // Number of slides to show at a time
-        spaceBetween: 80,  // Space between slides
-        loop: true,        // Loop through slides
-        autoplay: {
-            delay: 2500,   // Auto scroll delay in milliseconds
-            disableOnInteraction: false,  // Keep auto scroll even when user interacts
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 10,
-            },
-            480: {
-                slidesPerView: 1,
-                spaceBetween: 10,
-            },
-            576: {
-                slidesPerView: 2,
-                spaceBetween: 10,
-            },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-            },
-            992: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-            },
-            1200: {
-                slidesPerView: 3,
-                spaceBetween: 40,
-            },
-        }
-    });
-</script>
 </body>
 </html>

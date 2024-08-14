@@ -1,93 +1,10 @@
 <x-layouts.website-layout title="Home">
 
-    <style>
-        .fit-image {
-            width: 100%;
-            height: 0;
-            padding-bottom: 100%;
-            position: relative;
-            background-color: #f7f7f7;
-        }
-
-        .fit-image img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .btn-secondary {
-            color: #fff !important;
-            background-color: #7D3800 !important;
-            border-color: #7D3800;
-        }
-
-        .btn-secondary:hover {
-            color: #fff !important;
-            background-color: #f6ab49;
-            border-color: #f6ab49;
-        }
-
-        .hero {
-            position: relative;
-            height: 70vh;
-        }
-
-        .hero img {
-            width: 100%;
-            height: 70vh;
-            object-fit: cover;
-            object-position: center;
-        }
-
-        .hero-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: white;
-        }
-
-        .hero-logo img {
-            width: 100%; /* Default for small screens */
-            max-width: 300px; /* Adjust as needed for large screens */
-            height: auto;
-        }
-
-        .hero-text {
-            font-size: 1.5rem; /* Default for small screens */
-        }
-
-        /* Media Queries for larger screens */
-        @media (min-width: 768px) {
-            .hero-logo img {
-                max-width: 500px; /* Adjust as needed for medium screens */
-            }
-
-            .hero-text {
-                font-size: 2rem; /* Adjust as needed for medium screens */
-            }
-        }
-
-        @media (min-width: 1200px) {
-            .hero-logo img {
-                max-width: 681px; /* Original size for large screens */
-            }
-
-            .hero-text {
-                font-size: 2rem; /* Original size for large screens */
-            }
-        }
-    </style>
-
     <!-- Hero Section Start -->
     <div class="hero mb-5 " style="z-index: -1">
         <img src="{{asset('assets/images/animals/homepage/slider-1.webp')}}" alt="Hero Image"/>
         <div class="hero-content">
-            <a href="{{url('/')}}" class="hero-logo">
+            <a href="javascript:void(0)" class="hero-logo">
                 <img src="{{asset('assets/images/logo/beonepet-logo-gold.svg')}}" alt="Site Logo"/>
             </a>
             <p class="hero-text">
