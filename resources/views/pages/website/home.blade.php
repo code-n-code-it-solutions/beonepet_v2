@@ -1,20 +1,19 @@
 <x-layouts.website-layout title="Home">
 
     <!-- Hero Section Start -->
-    <div class="hero mb-5 " style="z-index: -1">
-        <img src="{{asset('assets/images/animals/homepage/slider-1.webp')}}" alt="Hero Image"/>
-        <div class="hero-content">
+    <div class="hero mb-5" style="background-image: url('{{ asset('assets/images/animals/homepage/slider-1.webp') }}'); background-size: cover; background-position: center; background-attachment: fixed; z-index: -1; height: 100vh; position: relative;">
+        <div class="hero-content" style="position: relative; z-index: 1;">
             <a href="javascript:void(0)" class="hero-logo">
-                <img src="{{asset('assets/images/logo/beonepet-logo-gold.svg')}}" alt="Site Logo"/>
+                <img src="{{ asset('assets/images/logo/beonepet-logo-gold.svg') }}" alt="Site Logo"/>
             </a>
-            <p class="hero-text">
+            <p class="hero-text" id="parallax-text">
                 ¡Conectando con tu compañer@ de vida! Comunidad Amante de los Animales
             </p>
             <div class="d-flex justify-content-center align-items-center gap-3">
-                <a href="{{route('publish-ad')}}" class="btn btn-secondary rounded-pill">
+                <a href="{{ route('publish-ad') }}" class="btn btn-secondary rounded-pill">
                     CREA TU ANUNCIO
                 </a>
-                <a href="{{route('lost-n-found')}}" class="btn btn-primary rounded-pill">
+                <a href="{{ route('lost-n-found') }}" class="btn btn-primary rounded-pill">
                     MASCOTA PERDIDA
                 </a>
             </div>
@@ -23,7 +22,7 @@
     <!-- Hero Section End -->
 
     <!-- Product Section Start -->
-    <div class="section section-margin">
+    <div class="section section-margin" style="margin-top: 0 !important;">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
@@ -47,7 +46,7 @@
                                                 <div class="product">
                                                     <!-- Thumb Start  -->
                                                     <div class="thumb fit-image">
-                                                        <a href="{{route('animal-detail', $animal['slug'])}}" class="image">
+                                                        <a href="{{ route('animal-detail', $animal['slug']) }}" class="image">
                                                             <img class="img-fluid border" src="{{ asset('assets/images/animals/'.$animal['filename']) }}" alt="{{$animal['name']}}"/>
                                                         </a>
                                                     </div>
@@ -59,7 +58,7 @@
                                                     <!-- Content Start  -->
                                                     <div class="content">
                                                         <h5 class="title">
-                                                            <a href="{{route('animal-detail', $animal['slug'])}}">{{$animal['name']}}</a>
+                                                            <a href="{{ route('animal-detail', $animal['slug']) }}">{{$animal['name']}}</a>
                                                         </h5>
                                                         <h5 class="fs-6">Raza: {{$animal['breed']}}</h5>
                                                         <span class="price">
